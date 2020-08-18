@@ -1,0 +1,28 @@
+<div class="container product-details">
+	<div class="image">
+		<img src="{{ productItem.image }}">
+	</div>
+	<div class="details">
+		<div class="category">
+			{{ productItem.category }}
+		</div>
+		<div class="title">
+			{{ productItem.name }}
+		</div>
+		<div class="description">
+			{{ productItem.description }}
+		</div>
+		<div class="color">
+		</div>
+		<div class="shopping-details">
+			<div class="price-per-unit">
+				Price per unit
+				<div class="price">{{productItem.price}}</div>
+			</div>
+			<div class="buy-button">
+				Buy Now
+			</div>
+			<div class="cart" (click)="addToCart(productItem)"> <i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,50 @@
+.navbar {
+  margin-bottom: 40px;
+
+  .navigation,
+  .nav-right {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  input {
+    margin-right: 20px;
+    border: 0;
+    border-bottom: 1px solid;
+  }
+
+  .cart {
+    position: relative;
+    color: red;
+
+    span {
+      color: red;
+      font-weight: bold;
+      font-size: 13px;
+    }
+  }
+}
+
+a {
+  color: black;
+  list-style: none;
+  margin-right: 20px;
+}
+
+.logo {
+  margin-right: 40px;
+}
+
+.fa {
+  font-size: 32px;
+  color: black;
+}
+
+.fa-bars {
+  font-size: 36px;
+  color: white;
+  padding: 10px 14px;
+  background: #555;
+}

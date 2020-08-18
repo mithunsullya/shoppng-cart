@@ -1,0 +1,46 @@
+img {
+  width: 100%;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: row;
+
+  .image {
+    flex: 0 0 50%;
+    margin-right: 40px;
+
+    img {
+    height: 400px;
+    object-fit: cover;
+    }
+  }
+}
+
+.fa {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.title {
+font-size: 36px;
+font-weight: bold;
+}
+
+.shopping-details {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  max-width: 250px;
+
+  .price {
+  font-size: 30px;
+  font-weight: bold;
+  }
+  }
+  .buy-button {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    display: block;
+    }

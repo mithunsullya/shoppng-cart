@@ -1,0 +1,129 @@
+<div class="sidebar">
+  Filter By
+
+  <ngb-accordion [closeOthers]="true">
+    <ngb-panel id="accord-1">
+      <ng-template ngbPanelTitle>
+        <span
+          >Collection <i class="fa fa-angle-down" aria-hidden="true"></i
+        ></span>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+        terry richardson ad squid. 3 wolf moon officia
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel id="accord-2">
+      <ng-template ngbPanelTitle>
+        <span>Color <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <form>
+          <label class="color__item">
+            <input
+              type="radio"
+              name="color"
+              id="red"
+              [(ngModel)]="color"
+              value="red"
+              (change)="colorFilter($event)"
+            />
+            Red
+          </label>
+          <label class="color__item">
+            <input
+              type="radio"
+              name="color"
+              id="black"
+              value="black"
+              [(ngModel)]="color"
+              (change)="colorFilter($event)"
+            />
+            Black
+          </label>
+          <label class="color__item">
+            <input
+              type="radio"
+              name="color"
+              id="brown"
+              [(ngModel)]="color"
+              value="brown"
+              (change)="colorFilter($event)"
+            />
+            Brown
+          </label>
+          <label class="color__item">
+            <input
+              type="radio"
+              name="color"
+              id="blue"
+              [(ngModel)]="color"
+              value="blue"
+              (change)="colorFilter($event)"
+            />
+            Blue
+          </label>
+        </form>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel id="accord-3">
+      <ng-template ngbPanelTitle>
+        <span
+          >Category <i class="fa fa-angle-down" aria-hidden="true"></i
+        ></span>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <form>
+          <label class="color__item">
+            <input
+              type="checkbox"
+              name="category"
+              id="lounge"
+              [(ngModel)]="category"
+              value="lounge"
+            />
+            Lounge
+          </label>
+          <label class="color__item">
+            <input
+              type="checkbox"
+              name="category"
+              id="chair"
+              value="chair"
+              [(ngModel)]="category"
+            />
+            Chair
+          </label>
+          <label class="color__item">
+            <input
+              type="checkbox"
+              name="category"
+              id="shelves"
+              [(ngModel)]="category"
+              value="shelves"
+            />
+            Shelves
+          </label>
+          <label class="color__item">
+            <input
+              type="checkbox"
+              name="category"
+              id="tables"
+              [(ngModel)]="category"
+              value="tables"
+            />
+            Tables
+          </label>
+        </form>
+      </ng-template>
+    </ngb-panel>
+  </ngb-accordion>
+  <div class="price-range">
+    <label>Price Range</label>
+    <ng5-slider
+      [(value)]="value"
+      [(highValue)]="highValue"
+      [options]="options"
+    ></ng5-slider>
+  </div>
+</div>
